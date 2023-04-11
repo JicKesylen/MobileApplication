@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script> 
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      });
+    </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+    </script>
+    <title>Bootstrap網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          我的旅遊日記
+        </a>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">城市</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="taichung.html">台中</a>
+                <a class="dropdown-item" href="tainan.html">台南</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">台中</a>
+                <a class="dropdown-item" href="#">台南</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex" style="height: 40px;"  >
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" style="width: 80px;" type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+        <h1 class="text-center mt-5">我的旅行日記</h1>
+        <!-- 第一個景點 -->
+        <div class="row">
+          <div class="col-md-7">
+            <h2><small></small></h2>
+            <p class="lead">
+              我終於踏上了這場旅程，來到了這片充滿多樣風景的土地上。作為一個台灣本地人，我感到自己應該要更加深入地探索自己的國家。這趟旅行，我決定到台灣東部的海岸線遊玩，沿途欣賞壯麗的海景與山景，一探這塊土地的自然美景。我希望這趟旅程可以讓我更了解這片土地，並且帶給我許多難忘的回憶。
+            </p>
+            <p class="lead">
+              我去過合歡山和阿里山，兩者風景迥異，卻都非常壯麗。合歡山環境清幽，四周被峭壁環繞，而阿里山則是茂密的竹林和高山日出。在這兩個地方漫步，彷彿身處仙境。
+            </p>
+          </div>
+          <div class="col-md-5" style="width: 500px;height: 200px;">
+            <img src="./public/img/diary.png" class="img-fluid" style="width: 500px;height: 200px;">
+          </div>
+        </div>	
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14559.958468490187!2d121.2847818566482!3d24.172096907235147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346892bee9aecdef%3A0x2b3fa0e973bc3fb4!2z5ZCI5q2h5bGx!5e0!3m2!1szh-TW!2stw!4v1680148799157!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                合歡山
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14634.395443933177!2d120.78598973955079!3d23.510953900000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346edc20ac26153b%3A0xfff7f85ca03bbfd4!2z6Zi_6YeM5bGx5ZyL5a625qOu5p6X6YGK5qiC5Y2A!5e0!3m2!1szh-TW!2stw!4v1680148945034!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                阿里山
+              </button>
+            </div>
+          </div>
+        </div>
+	  </div>
+	  </main>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">銀白合歡山</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="h3" style="text-align: center;">美麗景色</p>
+            <img src="./public/img/HehuanMountain.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+            <h4 style="text-align: center;margin-top: 10px;">合歡山國家森林遊樂區</h4>
+            <div style="display: flex;justify-content: center;">
+              <p style="width: 300px;margin-top: 10px;text-align: justify;">說到雪與高山，「合歡山」肯定是台灣人的首選了，這也正是合歡山國家森林遊樂區最獨一無二的景緻。雪景是合歡山的一大特色，冬季皚皚白雪是亞熱帶台灣最讓人心醉的夢幻景象，而每年五月，清麗動人的森氏杜鵑花海，將翠綠的山頭綴的紅白交錯，好像又降下瑞雪一般，令人驚艷，演繹著四季都精彩的合歡山國家森林遊樂區。</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 互動視窗 -->
+    <div class="modal fade" id="myModal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">仙境阿里山</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="h3" style="text-align: center;">美麗景色</p>
+            <img src="./public/img/Alishan.jpg" width="70%" class="img-fluid" style="display: block; margin: auto;">
+            <h4 style="text-align: center;margin-top: 10px;">日出夕陽雲海，經典不錯過</h4>
+            <div style="display: flex;justify-content: center;">
+              <p style="width: 300px;margin-top: 10px;text-align: justify;">日出從晨霧中嶄露曙光，濤濤雲海深刻旅遊印象，在著名的阿里山五奇裡，天空變化的奇景就佔了三項， 日出、夕陽、雲海，最經典的阿里山美景，怎麼能錯過！</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+      <div class="container">
+        <hr>
+          <p>&copy; 2023嶺東&middot;
+            <a href="#">隱私權政策</a>
+            &middot;
+            <a href="#">服務條款</a>
+            <a href="#" style="padding-left: 72%;">Back to top</a>
+          </p>
+      </div>
+    </footer>
+  </body>
+</html>
